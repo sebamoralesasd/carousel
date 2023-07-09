@@ -22,8 +22,9 @@ def px_shave(grados_r)
 end
 
 def main
-  #puts 'Empieza el script'
-
+  # puts 'Empieza el script'
+  output = `ls`
+  puts output
   grados_rotacion = DateTime.now.min * 6
 
   foto_perfil_rm = ImageList.new('perfil.jpg')
@@ -40,7 +41,7 @@ def main
 
   client.update_profile_image(foto_perfil_raw)
 
-  #puts 'Fin!'
+  # puts 'Fin!'
 end
 
 main
