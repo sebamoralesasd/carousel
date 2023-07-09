@@ -27,7 +27,7 @@ def main
   puts output
   grados_rotacion = DateTime.now.min * 6
 
-  foto_perfil_rm = ImageList.new('perfil.jpg')
+  foto_perfil_rm = ImageList.new('./lib/carousel/perfil.jpg')
   foto_perfil_rm.background_color = 'none'
   edit_foto = foto_perfil_rm.rotate(grados_rotacion)
 
