@@ -29,7 +29,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     method_source (1.0.0)
     multipart-post (2.3.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
     naught (1.1.0)
+    nio4r (2.5.9)
     open-uri (0.3.0)
       stringio
       time
@@ -39,12 +42,24 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (5.0.1)
+    puma (6.3.0)
+      nio4r (~> 2.0)
+    rack (2.2.7)
+    rack-protection (3.0.6)
+      rack
     rake (13.0.6)
     rmagick (5.2.0)
       pkg-config (~> 1.4)
+    ruby2_keywords (0.0.5)
     simple_oauth (0.3.1)
+    sinatra (3.0.6)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.6)
+      tilt (~> 2.0)
     stringio (3.0.7)
     thread_safe (0.3.6)
+    tilt (2.2.0)
     time (0.2.2)
       date
     twitter (8.0.0)
@@ -72,7 +87,9 @@ DEPENDENCIES
   date
   open-uri
   pry
+  puma
   rmagick
+  sinatra
   twitter
   whenever
 
