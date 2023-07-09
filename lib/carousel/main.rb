@@ -23,7 +23,7 @@ end
 
 def main
   # puts 'Empieza el script'
-  output = `ls`
+  output = `ls ./lib/carousel/`
   puts output
   grados_rotacion = DateTime.now.min * 6
 
